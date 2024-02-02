@@ -1,5 +1,5 @@
 # basic config
-baseURL = 'http://example.org/'
+baseURL = './'
 title = 'Biu!'
 languageCode = 'en-us'
 

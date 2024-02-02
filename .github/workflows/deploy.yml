@@ -1,0 +1,32 @@
+name: Hugo deploy
+
+# trigger when push to master
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      with:
+        submodules: true
+
+    - name: Set hugo
+      uses: peaceiris/actions-hugo@v2
+      with:
+        hugo-version: '0.111.3' # TODO update to lasted  # 'latest'
+        # extended: true
+
+    - name: Build
+        run: hugo --minify
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./public
