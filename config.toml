@@ -1,4 +1,34 @@
+# basic config
 baseURL = 'http://example.org/'
+title = 'Biu!'
 languageCode = 'en-us'
-title = 'Yes Captain!'
+
+# for theme
 theme = 'ananke'
+
+# prod config
+relativeURLs = true         # set relative url like css-ref in index.html
+
+[author]
+  name = "Cui"
+
+
+
+#[services.disqus]
+#  shortname = 'short'
+#[params]
+#  commentoEnable = true
+
+[[params.ananke_socials]]
+name = "github"
+url = "https://github.com/SoTosorrow"
+
+#[languages]
+#  [languages.en]
+#    weight = 1
+#    contentDir = "content/en"
+#    # languageDirection = 'rtl' for Right-To-Left languages
+#  [languages.zh]
+#    weight = 2
+#    contentDir = "content/zh"
+
