@@ -1,7 +1,7 @@
-# basic config
 baseURL = './'
 title = 'Biu!'
-languageCode = 'en-us'
+languageCode = 'zh'
+hasCJKLanguage = true
 
 # for theme
 theme = 'ananke'
