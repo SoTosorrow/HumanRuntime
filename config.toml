@@ -11,6 +11,8 @@ relativeURLs = true         # set relative url like css-ref in index.html
 
 [author]
   name = "Cui"
+[params]
+  recent_posts_number = 5
 
 
 
